@@ -4,7 +4,7 @@
   "description": "I hope this solution will be faster than BUN with his 40k requests per second",
   "main": "index.js",
   "scripts": {
-    "start": "SQLITE_PATH=./feed.db  node ./src/index.js",
+    "start": "SQLITE_PATH=./feed.db  node --max-semi-space-size=64 ./src/index.js",
     "dev": "SQLITE_PATH=./feed.db  node --watch ./src/index.js",
     "bench": "k6 run ../../bench/load.js",
     "copy-db": "rm -rf feed.db* && cp ../../seed/feed.db* ./",
