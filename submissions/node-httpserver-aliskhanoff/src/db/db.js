@@ -1,4 +1,4 @@
-import Database from '.pnpm/better-sqlite3@13.0.3/node_modules/better-sqlite3';
+import Database from 'better-sqlite3';
 const SQLITE_PATH = process.env.SQLITE_PATH ?? './feed.db';
 
 if (!SQLITE_PATH) throw new Error('SQLITE_PATH is not defined');
