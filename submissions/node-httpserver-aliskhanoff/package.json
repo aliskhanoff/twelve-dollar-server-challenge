@@ -12,7 +12,8 @@
     "profile:gc": "node --trace-gc ./src/index.js",
     "autocannon-post": "autocannon -c 1000 -d 5 -p 5 http://localhost:3000/post/1",
     "autocannon-feed": "autocannon -c 1000 -d 5 -p 5 http://localhost:3000/feed",
-    "autocannon-health": "autocannon -c 1000 -d 5 -p 5 http://localhost:3000/health"
+    "autocannon-health": "autocannon -c 1000 -d 5 -p 5 http://localhost:3000/health",
+    "build": "./install.sh"
   },
   "keywords": [],
   "author": "aliskhanoff (https://github.com/aliskhanoff)",
